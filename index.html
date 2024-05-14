@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarwebsite</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/splide@3.0.9/dist/css/splide.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+<script src="https://cdn.jsdelivr.net/npm/splide@3.0.9/dist/js/splide.min.js"></script>
+<body>
+
+    <!-- Navbar -->
+    <header class="bg-gray-900 text-white fixed top-0 w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-white text-xl font-bold">||श्री||</a>
+                </div>
+
+                <!-- Hamburger icon (hidden on large screens) -->
+                <div class="flex md:hidden">
+                    <button id="hamburger" class="text-white focus:outline-none">
+                        <i class="ri-menu-line text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Navbar links (hidden on small screens) -->
+                <nav class="hidden md:flex md:items-center md:space-x-4">
+                    <a href="#" class="text-white">Home</a>
+                    <a href="#" class="text-white">About</a>
+                    <a href="#" class="text-white">Services</a>
+                    <a href="#" class="text-white">Contact</a>
+                    <a href="#" class="text-white">Testimonials</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden bg-gray-900 text-white fixed top-16 w-full z-40 shadow-md transition-transform transform -translate-y-full">
+        <div class="px-4 py-2">
+            <a href="#" class="block text-white py-2">Home</a>
+            <a href="#" class="block text-white py-2">About</a>
+            <a href="#" class="block text-white py-2">Services</a>
+            <a href="#" class="block text-white py-2">Contact</a>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1629726797843-618688139f5a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for text legibility -->
+        <div class="text-center text-white z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Solar Panel Installation Services</h1>
+            <p class="text-lg md:text-xl mb-8">Harness the power of the sun with our professional solar panel installation services.</p>
+            <a href="#" class="bg-gray-500 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-gray-900 text-white py-3 text-center">
+        <marquee behavior="scroll" direction="left">
+            <h3 class="text-lg md:text-xl font-bold">Call For a Free Quote: <a href="tel:7017291850" class="underline">701-729-1850</a></h3>
+        </marquee>
+    </div>
+
+
+
+    <!-- About Us Section -->
+    <section class="my-4 px-4 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+            <p class="text-lg mb-8">We are a leading provider of solar panel installation services, dedicated to helping homeowners and businesses harness clean energy from the sun.</p>
+            <p class="text-lg mb-8">Our team of experienced technicians specializes in designing and installing custom solar solutions tailored to your property's energy needs. Whether you're looking to reduce electricity bills or minimize your carbon footprint, we're here to guide you through the process.</p>
+            <p class="text-lg mb-8">At SolarTech, we prioritize quality, efficiency, and customer satisfaction. We use industry-leading solar panels and equipment to ensure optimal performance and durability.</p>
+            <p class="text-lg mb-8">Contact us today to schedule a free consultation and discover the benefits of solar energy for your home or business.</p>
+            <a href="#" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">Contact Us</a>
+        </div>
+    </section>
+
+
+
+     <!-- banner 2  -->
+     <div class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://source.unsplash.com/featured/?solar-panels');">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for text legibility -->
+        <div class="text-center text-white z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Harness the Power of Solar Energy</h1>
+            <p class="text-lg md:text-xl mb-8">Discover clean and renewable energy solutions for your home or business.</p>
+           
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="bg-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-gray-800 font-semibold tracking-wide uppercase">Our Solar Panel Services</h2>
+                <p class="mt-2 leading-8 lg:text-2xl font-extrabold text-gray-900">Clean, Renewable Energy Solutions</p>
+            </div>
+    
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service Item 1 -->
+                    <div class="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow-lg">
+                        <i class="ri-sun-line text-4xl text-indigo-600 mb-4"></i>
+                        <h3 class="text-lg font-medium text-gray-900">Solar Panel Installation</h3>
+                        <p class="mt-2 text-base text-gray-500">Professional installation of solar panels for homes and businesses.</p>
+                    </div>
+    
+                    <!-- Service Item 2 -->
+                    <div class="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow-lg">
+                        <i class="ri-battery-2-line text-4xl text-indigo-600 mb-4"></i>
+                        <h3 class="text-lg font-medium text-gray-900">Battery Storage Solutions</h3>
+                        <p class="mt-2 text-base text-gray-500">Integration of battery systems to store excess solar energy.</p>
+                    </div>
+    
+                    <!-- Service Item 3 -->
+                    <div class="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow-lg">
+                        <i class="ri-earth-line text-4xl text-indigo-600 mb-4"></i>
+                        <h3 class="text-lg font-medium text-gray-900">Green Energy Consulting</h3>
+                        <p class="mt-2 text-base text-gray-500">Expert advice on sustainable energy solutions and cost savings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Client Testimonials</h2>
+                <p class="mt-2 leading-8 lg:text-2xl font-extrabold text-gray-900">See what our customers are saying</p>
+            </div>
+    
+            <div class="mt-10">
+                <div id="testimonial-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <!-- Testimonial Item 1 -->
+                            <li class="splide__slide">
+                                <div class="bg-white p-8 rounded-lg shadow-lg">
+                                    <p class="text-xl font-medium text-gray-900">"Tailwind CSS is amazing! It makes building responsive websites a breeze."</p>
+                                    <p class="mt-4 text-base text-gray-600">- John Doe, CEO of Example Company</p>
+                                </div>
+                            </li>
+    
+                            <!-- Testimonial Item 2 -->
+                            <li class="splide__slide">
+                                <div class="bg-white p-8 rounded-lg shadow-lg">
+                                    <p class="text-xl font-medium text-gray-900">"I love how easy it is to customize styles with Tailwind CSS."</p>
+                                    <p class="mt-4 text-base text-gray-600">- Jane Smith, Designer</p>
+                                </div>
+                            </li>
+    
+                            <!-- Testimonial Item 3 -->
+                            <li class="splide__slide">
+                                <div class="bg-white p-8 rounded-lg shadow-lg">
+                                    <p class="text-xl font-medium text-gray-900">"Tailwind CSS has streamlined our development process."</p>
+                                    <p class="mt-4 text-base text-gray-600">- Alex Johnson, Developer</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+
+    
+    <script src="script.js"></script>
+    
+
+  
+
+   
+
+</body>
+
+</html>
