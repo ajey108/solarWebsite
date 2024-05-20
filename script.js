@@ -60,3 +60,28 @@ function validateForm() {
 
     return isValid;
 }
+
+
+//calcu
+
+
+function calculateSolarEnergy() {
+    // Retrieve input values
+    const sunlightHours = parseFloat(document.getElementById('sunlightHours').value);
+    const systemSize = parseFloat(document.getElementById('systemSize').value);
+    const energyConsumption = parseFloat(document.getElementById('energyConsumption').value);
+
+    // Calculate solar energy production
+    const solarEnergyProduction = sunlightHours * systemSize;
+
+    // Display result
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = `Estimated Solar Energy Production: ${solarEnergyProduction.toFixed(2)} kWh per day`;
+
+    // Check if solar energy meets or exceeds consumption
+    if (solarEnergyProduction >= energyConsumption) {
+        resultElement.textContent += " (Exceeds Daily Consumption)";
+    } else {
+        resultElement.textContent += " (Does Not Meet Daily Consumption)";
+    }
+}
